@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+header img{
+    width: 40px;
+}
+header{
+    width: 100vw;
+    background-color: #00000002;
+    position: fixed;
+    top: 0%;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    
+}
+nav ul, img{
+    display: flex;
+}
+
+ul li{
+    margin: 0px 70px;
+    padding: 10px;
+    color: white;
+    list-style-type: none;
+    
+}
+nav ul li a{
+color: white;
+text-decoration: none;
+font-size: 1.3em
+}
+nav ul li a:hover{
+    text-decoration: underline;
+}
+#landing{
+    height: 100vh;
+    background-image: url(images/unnamed.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    background-attachment: fixed;
+ 
+}
+#landing img{
+    display: block;
+    margin: auto;
+    width: 250px;
+    padding-top: 130px;
+
+}
+#landing img{
+    margin-bottom: 20px;  
+
+}
+.landcontainer{
+   
+    height: 60vh;
+    padding: 20px;
+}
+hr{
+    display: block;
+    width: 60%;
+    margin: auto;
+    margin-bottom: 30px;
+}
+.landcontainer{
+    font-size: 30px;
+
+}
+.landcontainer h1{
+
+    text-align: center;
+    padding-top: 2px;
+}
+.landcontainer p{
+    
+    text-align: center;
+}
+.textbox{
+    background-color: #333333;
+    margin: 0px 150px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+
+}
+.cta-button{
+padding: 20px;
+display: block;
+margin: auto;
+margin-top: 40px;
+border-radius: 15px;
+border: none;
+background-color: #baf168;
+color: white;
+transition: scale 0.5s;
+transition: background-color 0.3s;
+font-size: 1.2rem;
+
+}
+.cta-button:hover{
+    scale: 1.2;
+    background-color: #90d628;
+}
+a{
+    text-decoration: none;
+}
+
+.landcontainer{
+    margin: 0px 150px;
+}
+
+#sobre, #historia, #historia2, #historia3{
+    height: 100vh;
+    background-color: #333333;
+    color: white;
+
+}
+.container{
+    
+    line-height: 1.3;
+    font-size: 30px;
+    text-align: center;
+    width: 60%;
+    margin: auto;
+    padding-top: 160px;
+}
+.container p{
+    padding-top: 50px;
+}
+.parallax{
+    height: 50vh;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+.parallax1{
+    background-image: url(https://i.redd.it/pr7qo3oqjd491.jpg);
+   
+}
+.parallax2{
+    background-image: url(https://electricbloomwebzine.com/wp-content/uploads/2024/03/Ado_Live_20240313_Ldn_2_PhotoBy_Viola-Kam-Vz-Twinkle-1500px.jpg);
+}
+.parallax3{
+    background-image: url(https://unseen-japan.com/wp-content/uploads/2021/03/rockvocaliodimage.png);
+}
+
+
+.imagewrap img {
+    flex: 1;
+    width: 150px; 
+    height: 50vh;
+    transition: transform 0.3s; 
+    transition: flex 0.3s;
+}
+.imagewrap {
+    display: flex; 
+    overflow: hidden;
+}
+.imagewrap img:hover {
+    transform: scale(1.1); 
+    flex: 2;
+}
+nav img:hover{
+    transform: rotate(360deg);
+}
+nav img{
+    transition: transform 0.5s;
+}
+footer{
+    padding: 15px;
+    width: 100vw;
+    text-align: center;
+    background-color: #616161;
+    color: white;
+}
+
+@media( max-width: 830px){
+.container{
+    height: 100vh;
+    font-size: 20px;
+}
+.imagewrap{
+    flex-direction: column;
+}
+.imagewrap img{
+    width: 100vw;
+}
+.landcontainer{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+
+}
+.textbox{
+    margin: auto;
+}
+#landing{
+    height: 100vh;
+   
+}
+
+
+}
